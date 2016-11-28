@@ -1,0 +1,69 @@
+%w-form--input-style {
+  font-size: cr(16px);
+  width: 100%;
+  max-width: 495px;
+  height: 39px;
+  border: 1px solid $color--border-primary;
+  outline: none;
+  display: block;
+}
+.w-form {
+  margin: cr(50px) 0;
+  &__content {}
+  &__block {
+    position: relative;
+    margin-bottom: cr(52px);
+  }
+  &__label {
+    display: block;
+    color: $color--form-label;
+    @extend %w-form--input-style;
+    border: none;
+    height: auto;
+    span {
+      color: $color--form-error;
+    }
+  }
+  &__input {
+    @extend %w-form--input-style;
+  }
+  &__select {
+    @extend %w-form--input-style;
+  }
+  &__textarea {
+    @extend %w-form--input-style;
+    height: auto;
+    min-height: cr(170px);
+  }
+  &__recaptcha {
+    input {
+    }
+    label {
+      margin-top: 15px;
+      &.reload {
+        color: $color--brand-primary;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__button {
+    @extend .b-button;
+    border: none;
+    min-width: cr(150px);
+  }
+  label {
+    &.error {
+      color: $color--form-error;
+      font-size: cr(16px);
+      position: absolute;
+      right: 0;
+      bottom: cr(-25px);
+    }
+  }
+}
+
+// site key
+// 6Lf6rSkTAAAAAFbfyupxij4sRlBMn9BPMbsORG8Z
+//
+// Secret key
+// 6Lf6rSkTAAAAANrjI9ex2SYFIoFxRma8opm8bVkq

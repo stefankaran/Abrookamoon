@@ -1,0 +1,12 @@
+.w-slider--article-featured {
+  @include bp(mobile) {
+    display: none;
+  }
+  .slick-arrow {
+    position: absolute;
+    bottom: 40%;
+    z-index: 1;
+    cursor: pointer;
+    margin: auto;
+  }
+}

@@ -1,0 +1,14 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color--heading;
+  font-family: $font--NotoKufiBold;
+  line-height: cr(30px);
+  // font-size: 34px;
+  @include bp(mobile) {
+    font-family: $font--NotoKufiRegular;
+  }
+}

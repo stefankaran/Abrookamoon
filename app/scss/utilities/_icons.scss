@@ -1,0 +1,47 @@
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+// This yields the same output as CSS retina template but can be overridden in SCSS
+@include retina-sprites($retina-groups);
+// Every time when run gulp sprite, u must:
+//   1. copy 2 sprite img to folder 'images'
+//   2. copy _sprite.scss file in folder 'utilities'
+//   3. in _sprite.scss change path to folder 'images'
+// @mixin sprite-image($sprite) {
+//  $sprite-image: nth($sprite, 9);
+//  background-image: url(../../assets/images/#{$sprite-image}); *3.
+// }
+
+// .icon--search-header-mobile {
+//   @include bp(mobile) {
+//     width: cr(39px);
+//     height: cr(39px);
+//     background: {
+//       image: url(../../assets/images/search-header--mob.png);
+//       size: cr(39px);
+//       position: 0;
+//     }
+//   }
+// }
+
+
+// CUSTOM FONT ICONS
+// $icomoon-font-path: "../../../assets/fonts/svg-fonts" !default;
+[class^="icon--"], [class*=" icon--"] {
+  @extend .icon;
+}
+//----- scss example @extend .icon, .icon--facebook;
+//----- html example <span class="icon--facebook"></span>
+
+.icon--arrow-pink {
+  @extend .icon--arrow;
+  font-size: cr(100px);
+  color: $color--brand-primary;
+  &__left {
+    @extend .icon--arrow-pink;
+    left: -2%;
+  }
+  &__right {
+    @extend .icon--arrow-pink;
+    @include vendor-prefixes(transform, rotate(180deg));
+    right: -2%;
+  }
+}

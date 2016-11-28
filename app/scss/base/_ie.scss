@@ -1,0 +1,22 @@
+.ie {
+  &9 { //changed
+    .icon--arrow-pink__left {
+      // -ms-transform: rotate(0deg);
+    }
+    .b-article-featured__content,
+    .b-article-listing__media {
+      &:after {
+        -ms-transform: rotate(180deg);
+      }
+    }
+    .media-gallery-branded-fullscreen.desktop .mgb-asside #mgb-thumbs-dw, {
+      -ms-transform: rotate(0deg);
+    }
+    .media-gallery-branded-fullscreen.desktop .mgb-asside #mgb-thumbs-up {
+      -ms-transform: rotate(180deg);
+    }
+  }
+  &10 {}
+  &11 {}
+  &-edge {}
+}

@@ -1,0 +1,23 @@
+.w-slider--instagram {
+  border: 1px dotted $color--border-primary;
+  max-width: 1079px;
+  margin: cr(55px) 0 cr(45px);
+  padding: cr(14px) 3.98517% cr(60px);
+  &__heading {
+    font-family: $font--Arial;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: cr(45px);
+    text-align: center;
+    @include bp(mobile) {
+      font-size: cr(22px);
+    }
+  }
+  iframe {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    height: 220px;
+  }
+}

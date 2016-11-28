@@ -1,0 +1,71 @@
+.w-gallery {
+  margin-bottom: cr(35px);
+  img {
+    margin: 0 auto;
+  }
+}
+
+//----- Gallery -- yasmina-backbone-app
+$theColor: red;
+// $backboneImgBaseUrl: "/../bower_components/yasmina-backbone-app/static/img/";
+$backboneImgBaseUrl: "../../assets/images/gallery-icons/";
+.article-gallery .mg-item:first-child {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  z-index: auto;
+  position: relative;
+  cursor: pointer;
+  .mg-zoom-icon {
+    display: none;
+  }
+}
+.article-gallery .mg-item,
+.article-gallery .mg-related-item,
+.article-gallery .mg-capt,
+.article-gallery h3 {
+  margin: 0;
+  opacity: 0.001;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-main .mgb-header .mgb-logo,
+.media-gallery-branded-fullscreen.mobile .mgb-main .mgb-header .mgb-logo,
+.media-gallery-branded-fullscreen.mobile .mgb-asside .mgb-asside-header .mgb-logo,
+.media-gallery-branded-fullscreen.tablet .mgb-main .mgb-header .mgb-logo,
+.media-gallery-branded-fullscreen.tablet .mgb-asside .mgb-asside-header .mgb-logo {
+  background: url("../../assets/images/gallery-icons/mgb/abrookamoon-logo.svg") no-repeat center center !important;
+  width: 200px !important;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-main .mgb-header .mgb-numers-w {
+  color: $black !important;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-asside .mgb-thumbs-w .mgb-thumbs .mgb-thumb span,  //changed
+.media-gallery-branded-fullscreen.desktop .mgb-main .mgb-footer .mgb-captions-w .mgb-captions .mgb-caption h3 .ui {
+  color: $color--brand-primary !important;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-main .mgb-footer .mgb-captions-w .mgb-captions .mgb-caption h3 {
+  font-family: $font--NotoKufiBold !important;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-main .mgb-footer .mgb-share-w .mgb-share #facebook_share {
+  // padding: 10px;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-asside #mgb-thumbs-dw,
+.media-gallery-branded-fullscreen.desktop .mgb-asside #mgb-thumbs-up {
+  background: url("../../assets/images/gallery-icons/mgb/left.svg") no-repeat center center !important;
+}
+.media-gallery-branded-fullscreen.desktop .mgb-asside #mgb-thumbs-dw, {
+  @include vendor-prefixes(transform, rotate(-90deg));
+}
+.media-gallery-branded-fullscreen.desktop .mgb-asside #mgb-thumbs-up {
+  @include vendor-prefixes(transform, rotate(90deg));
+}
+.media-gallery-branded-fullscreen.desktop .mgb-main .mgb-content .mgb-slider-w .mgb-slider .mgb-prev {
+  right: 5px !important;
+}
+.media-gallery-branded-fullscreen.tablet .mgb-thumbs-button {
+  max-width: none !important;
+}

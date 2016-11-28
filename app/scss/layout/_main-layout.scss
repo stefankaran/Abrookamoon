@@ -1,0 +1,35 @@
+html {}
+body {}
+%wrapper {
+  width: 100%;
+  @extend %center-block;
+}
+.l-wrapper {
+  @extend %wrapper;
+  max-width: 1162px;
+  padding: 0 cp(43, 1162);
+  // padding: 0 43px;
+  @include bp(mobile) {
+    max-width: 640px;
+    padding: 0 cp(37.5, 640);
+  }
+  &--full {
+    @extend %wrapper;
+  }
+  &--page {
+    @extend %wrapper;
+    max-width: 1079px;
+    padding: 0 cp(43, 1079);
+    @include bp(mobile) {
+      padding: 0;
+    }
+    &-article {
+      @extend %wrapper;
+      max-width: 979px;
+      padding: 0 cp(43, 979);
+      @include bp(mobile) {
+        padding: 0;
+      }
+    }
+  }
+}

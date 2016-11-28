@@ -1,0 +1,27 @@
+//----- Example... @include vendor-prefixes(border-radius, 50%);
+//----- Example... @include vendor-prefixes(transform, rotate(180deg));
+@mixin vendor-prefixes($name, $argument) {
+	@each $property in $vendor-prefixes {
+		//----- $vendor-prefixes defined in _variables.scss
+		#{$property}#{$name}: #{$argument};
+	}
+}
+//----- 1vmin = 1vw or 1vh, whichever is smaller.
+//----- The vmin unit is not supported in IE8 and earlier.
+//----- Example... @include vmin(font-size, 5);
+@mixin vmin($name, $argument) {
+	#{$name}: #{$argument}vmin;
+	#{$name}: #{$argument}vm; // fallback for IE9
+}
+//----- Creates arrow
+//----- direction options: top, right, bottom, left. (to match border-'direction' of css)
+//----- Example @include arrow(bottom, 12px, #f00);
+@mixin arrow($direction:left, $width:34px, $color:#89D4E7) {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	$opposite: nth((top,right,bottom,left), index((bottom,left,top,right),$direction));
+	border: solid $width transparent;
+	border-#{$direction}: none;
+	border-#{$opposite}: solid $width $color;
+}

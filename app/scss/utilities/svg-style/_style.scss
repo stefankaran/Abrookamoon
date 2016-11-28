@@ -1,0 +1,68 @@
+@import "variables";
+
+@font-face {
+  font-family: 'abrookamoon-font';
+  src:
+    url('#{$icomoon-font-path}/abrookamoon-font.ttf?mgr3jx') format('truetype'),
+    url('#{$icomoon-font-path}/abrookamoon-font.woff?mgr3jx') format('woff'),
+    url('#{$icomoon-font-path}/abrookamoon-font.svg?mgr3jx#abrookamoon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'abrookamoon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--abrookamoon-logo {
+  &:before {
+    content: $icon--abrookamoon-logo;
+  }
+}
+.icon--arrow {
+  &:before {
+    content: $icon--arrow;
+  }
+}
+.icon--facebook {
+  &:before {
+    content: $icon--facebook;
+  }
+}
+.icon--google-plus {
+  &:before {
+    content: $icon--google-plus;
+  }
+}
+.icon--instagram {
+  &:before {
+    content: $icon--instagram;
+  }
+}
+.icon--search {
+  &:before {
+    content: $icon--search;
+  }
+}
+.icon--transfer {
+  &:before {
+    content: $icon--transfer;
+  }
+}
+.icon--twitter {
+  &:before {
+    content: $icon--twitter;
+  }
+}
+

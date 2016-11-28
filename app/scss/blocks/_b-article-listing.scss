@@ -1,0 +1,74 @@
+.b-article-listing {
+  width: 100%;
+  overflow: hidden;
+  &__item {
+    @extend %clearfix;
+    margin-bottom: 76px;
+    &:nth-child(even) {
+      .b-article-listing__media {
+        float: right;
+        &:after {
+          left: 0;
+          @include arrow(right, 20px, $white);
+          @include bp(mobile) {
+            border-width: cr(10px);
+          }
+        }
+      }
+      .b-article-listing__content {
+        float: right;
+        text-align: right;
+        padding-right: cp(48, 990);
+        padding-left: 0;
+      }
+    }
+    @include bp(mobile) {
+      margin-bottom: cr(43px);
+    }
+  }
+  &__media {
+    width: cp(537, 990);
+    float: left;
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 13.5%;
+      content: '';
+      @include arrow(left, 20px, $white);
+      @include bp(mobile) {
+        top: 16.5%;
+        border-width: cr(10px);
+      }
+    }
+  }
+  &__image {}
+  &__content {
+    width: cp(453, 990);
+    float: left;
+    text-align: left;
+    padding-left: cp(48, 990);
+  }
+  &__category {
+    @extend %b-category--article-listing;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include bp(mobile) {
+      padding-top: cr(7px);
+      padding-bottom: cr(7px);
+    }
+  }
+  &__heading {
+    font-size: 25px;
+    margin: 36px 0 22px;
+    @include bp(mobile) {
+      font-size: cr(23px);
+      margin: cr(20px) 0 0;
+    }
+  }
+  &__excerpt {
+    font-size: 22px;
+    line-height: 25px;
+    color: $color--text;
+    @extend %hide-on-mobile;
+  }
+}

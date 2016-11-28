@@ -1,0 +1,109 @@
+.b-products {
+  position: relative;
+  margin-bottom: cr(58px);
+  // margin: 100px 0;
+  @extend %clearfix;
+  &__wrapper {
+    @extend .l-wrapper;
+  }
+  &__border {
+    border: 1px dotted $color--brand-secondary;
+    padding-bottom: 265px;
+    position: relative;
+    z-index: 2;
+    @include bp(mobile) {
+      padding-bottom: cr(217px);
+    }
+  }
+  &__tittle {
+    font-size: cr(25px);
+    text-align: center;
+    margin: 20px 0 56px;
+    @include bp(mobile) {
+      margin: cr(20px) 0;
+    }
+  }
+  &__slider--image {
+    overflow: hidden;
+  }
+  &__slider--image__item {
+    @extend %grid-clear;
+    width: 25%;
+    text-align: center;
+  }
+  &__media {
+    img {
+      margin: 0 auto;
+      @include bp(mobile) {
+        max-width: cr(300px);
+      }
+    }
+  }
+  &__description-block {
+    position: absolute;
+    bottom: 85px;
+    width: 100%;
+    display: inline-block;
+    background-color: $color--brand-secondary;
+    margin-top: 33px;
+    &:after {
+      content: '';
+      height: cr(20px);
+      width: 100%;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+    }
+    @include bp(mobile) {
+    bottom: cr(35px);
+    }
+  }
+  &__slider--content {
+    overflow: hidden;
+    @extend .l-wrapper;
+    z-index: 2;
+  }
+  &__slider--content__item {
+    position: relative;
+    @extend %grid-clear;
+    width: 25%;
+    text-align: center;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      @include arrow(bottom, cr(14px), #fff);
+    }
+  }
+  &__brand {
+    font-family: $font--Arial;
+    display: inline-block;
+    font-size: 12px;
+    margin: cr(29px) 0 cr(12px);
+    @include bp(mobile) {
+      font-size: cr(15px);
+    }
+  }
+  &__heading {
+    font-family: $font--Georgia;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: cr(35px);
+    @include bp(mobile) {
+      font-size: cr(23px);
+    }
+    a {
+      display: block;
+    }
+  }
+  &__button {
+    @extend .b-button;
+    position: relative;
+    z-index: 2;
+  }
+}

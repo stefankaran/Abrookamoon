@@ -1,0 +1,117 @@
+%social-item { // style for every social item
+  @extend .icon;
+  display: inline-block;
+  vertical-align: top;
+  &:not(:first-child) {
+    margin-right: 12px;
+  }
+  @include bp(mobile) {
+    &:not(:first-child) {
+      margin-right: cr(22px);
+    }
+  }
+}
+%social-item--header { // style only for header social items
+  @extend %social-item;
+  color: $black;
+  font-size: 21px;
+  @include bp(mobile) {
+    font-size: cr(42px);
+  }
+}
+%social-item--footer { // style only for footer social items
+  @extend %social-item;
+  color: $white;
+  font-size: 21px;
+  @include bp(mobile) {
+    font-size: cr(42px);
+  }
+}
+%social-item--share { // style only for share social items
+  @extend %social-item;
+  color: $black !important;
+  border: 1px solid $black;
+  font-size: 15px !important;
+  padding: 12px;
+  @include bp(mobile) {
+    font-size: cr(26px) !important;
+    padding: cr(22px);
+  }
+}
+%facebook {
+  @extend .icon--facebook;
+}
+%send {
+  @extend .icon--transfer;
+}
+%instagram {
+  @extend .icon--instagram;
+}
+%twitter {
+  @extend .icon--twitter;
+}
+%google-plus {
+  @extend .icon--google-plus;
+}
+.b-social {
+  &--header { //----- div around items
+    float: left;
+    margin-top: 4px;
+    @extend %hide-on-mobile;
+  }
+  &--footer { //----- div around items
+    // margin-left: 10px;
+    @include bp(mobile) {
+      margin-top: cr(30px);
+      margin-bottom: cr(40px);
+    }
+  }
+  &--article-share { //----- div around items
+    @include bp(overMobile) {
+      float: left;
+    }
+    @include bp(mobile) {
+      text-align: center;
+    }
+  }
+  &__facebook { //---- Facebook
+    &-header {
+      @extend %facebook, %social-item--header;
+    }
+    &-footer {
+      @extend %facebook, %social-item--footer;
+    }
+    &-article--share {
+      @extend %facebook, %social-item--share;
+    }
+  }
+  &__send { //---- Send; Send(name icon) == Transfer
+    &-header {
+      @extend %send, %social-item--header;
+    }
+    &-footer {
+      @extend %send, %social-item--footer;
+    }
+    &-article--share {
+      @extend %send, %social-item--share;
+    }
+  }
+  &__instagram { //---- Instagram
+    &-header {
+      @extend %instagram, %social-item--header;
+    }
+    &-footer {
+      @extend %instagram, %social-item--footer;
+    }
+  }
+  &__twitter { //---- Twitter
+    &-article--share {
+      @extend %twitter, %social-item--share;
+    }
+  }
+  &__google-plus { //---- Google+
+    &-article--share {
+      @extend %google-plus, %social-item--share;
+    }
+  }
+}

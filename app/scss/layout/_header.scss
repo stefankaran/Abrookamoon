@@ -1,0 +1,65 @@
+.header {
+  @extend .l-wrapper;
+  text-align: center;
+  &__top {
+    padding: 32px 0 12px;
+    border-bottom: 1px solid $color--border-primary;
+    @include bp(mobile) {
+      padding: cr(35px) 0 cr(26px);
+      border: none;
+    }
+  }
+  &__hamburger {
+    display: inline-block;
+    float: right;
+    margin-top: cr(7px);
+    @include bp(overMobile) {
+      display: none;
+    }
+    &__line {
+      background-color: $color--brand-primary;
+      width: cr(43px);
+      height: cr(5px);
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: cr(7px);
+      }
+    }
+  }
+  &__logo {
+    max-width: 258px;
+    display: inline-block;
+    @include bp(overMobile) {
+      margin-right: 100px;
+    }
+    @include bp(mobile) {
+      max-width: 63%;
+      margin-left: cr(17px);
+    }
+  }
+  &__bottom {
+    position: relative;
+    @include bp(overMobile) {
+      padding: 23px 0 72px;
+    }
+    @include bp(mobile) {
+      padding-bottom: cr(30px);
+    }
+  }
+  &__search-ico {
+    @extend .icon, .icon--search;
+    color: $color--brand-primary;
+    font-size: 19px;
+    float: left;
+    cursor: pointer;
+    @include bp(mobile) {
+    font-size: cr(40px);
+    }
+    &--mobile {
+      @extend %hide-on-overMobile;
+    }
+    &--desktop {
+      @extend %hide-on-mobile;
+    }
+  }
+}

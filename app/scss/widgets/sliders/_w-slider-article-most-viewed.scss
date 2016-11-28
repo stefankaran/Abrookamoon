@@ -1,0 +1,61 @@
+.w-slider--article-most-viewed {
+  background-color: $color--brand-secondary;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: cr(58px); // changed
+  @include bp(mobile) {
+    margin-top: cr(36px);
+  }
+  &:before {
+    content: '';
+    background: $white;
+    height: 26px;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  &__body {
+    @extend .l-wrapper--page;
+    position: relative;
+  }
+  &__category {
+    @extend %b-category--article-most-viewed;
+    display: table;
+    margin: cr(-25px) auto 30px;
+    @include bp(mobile) {
+      margin-bottom: cr(40px);
+    }
+  }
+  &__slider {
+    display: none;
+    margin: 0 auto;
+    @include bp(overMobile) {
+      padding: 0 cp(77, 987);
+    }
+    .slick-arrow {
+      position: absolute;
+      bottom: 50%;
+      z-index: 1;
+      cursor: pointer;
+      margin: auto;
+      // top: 0;
+      // bottom: 0;
+    }
+  }
+  &__slide {
+    outline: none;
+    img {
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+  &__heading {
+    font-size: cr(23px);
+    margin: 22px 0 36px;
+    @include bp(mobile) {
+      margin: cr(30px) 0 cr(50px);
+    }
+  }
+}

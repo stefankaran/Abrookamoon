@@ -1,0 +1,64 @@
+.w-search {
+  // @extend .l-wrapper;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  height: 0px;
+  overflow: hidden;
+  z-index: 5;
+  background: $white;
+  @include vendor-prefixes(transition, 0.6s);
+  @include bp(mobile) {
+    top: 2px;
+  }
+  &.w-search-active {
+    height: 69px;
+    padding-top: cr(16px);
+    padding-bottom: cr(16px);
+    @include bp(mobileSmall) {
+      height: 54px;
+    }
+  }
+  input {
+    border: none;
+    font-size: 14px;
+  }
+  &__form {
+    width: 26.5%;
+    min-width: 280px;
+    height: 36px;
+    float: left;
+    border: 1px solid $color--brand-primary;
+    overflow: hidden;
+    background: $white;
+    @include bp(mobile) {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+  &__input {
+    height: 100%;
+    // padding: 8px 3%;
+    width: 70%;
+    float: right;
+    z-index: 44;
+    // @include bp(mobile) { //changed
+    //   width: 74%;
+    // }
+  }
+  &__button {
+    height: 100%;
+    cursor: pointer;
+    background: $color--brand-primary;
+    color: $color--button-link;
+    // padding: cr(8px) 9%;
+    padding: 0 9%;
+    float: left;
+    margin: 0;
+    -webkit-appearance: none;
+    @include vendor-prefixes(border-radius, 0);
+  }
+}

@@ -1,0 +1,37 @@
+//----- Colors
+$black: #000;
+$black-light: #4c4c4c;
+$white: #fff;
+$antiqueWhite: #f3f0ed;
+$gray-light: #e7e3e8;
+$gray-dark: #bebebe;
+$gray-dark--second: #7f7f7f;
+$pink: #af1857;
+$red: #ff0000;
+
+//----- Brand colors
+$color--brand-primary: $pink;
+$color--brand-secondary: $antiqueWhite;
+//----- Link colors
+$color--link-header: $black;
+$color--link-footer: $white;
+$color--link-brand-primary: $pink;
+$color--link-hover: $pink;
+//----- Heading colors
+$color--heading: $black;
+//----- Text colors
+$color--text: $black-light;
+$color--text-form-label: $gray-dark;
+$color--date-article-single: $black-light;
+//----- Button colors
+$color--button-link: $white;
+$color--button-background: $pink;
+//----- Border colors
+$color--border-primary: $gray-light;
+$color--border-brand-color: $pink;
+$color--border-article-related: $gray-dark--second;
+//----- Background colors
+$color--background-footer: $black;
+//----- Form colors
+$color--form-label: $gray-dark;
+$color--form-error: $red;

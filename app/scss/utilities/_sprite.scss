@@ -1,0 +1,814 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$arrow-left-biege-name: 'arrow-left-biege';
+$arrow-left-biege-x: 53px;
+$arrow-left-biege-y: 0px;
+$arrow-left-biege-offset-x: -53px;
+$arrow-left-biege-offset-y: 0px;
+$arrow-left-biege-width: 53px;
+$arrow-left-biege-height: 102px;
+$arrow-left-biege-total-width: 327px;
+$arrow-left-biege-total-height: 224px;
+$arrow-left-biege-image: 'icons.png';
+$arrow-left-biege: (53px, 0px, -53px, 0px, 53px, 102px, 327px, 224px, 'icons.png', 'arrow-left-biege', );
+$arrow-left-instagram-mobile-name: 'arrow-left-instagram-mobile';
+$arrow-left-instagram-mobile-x: 212px;
+$arrow-left-instagram-mobile-y: 0px;
+$arrow-left-instagram-mobile-offset-x: -212px;
+$arrow-left-instagram-mobile-offset-y: 0px;
+$arrow-left-instagram-mobile-width: 65px;
+$arrow-left-instagram-mobile-height: 65px;
+$arrow-left-instagram-mobile-total-width: 327px;
+$arrow-left-instagram-mobile-total-height: 224px;
+$arrow-left-instagram-mobile-image: 'icons.png';
+$arrow-left-instagram-mobile: (212px, 0px, -212px, 0px, 65px, 65px, 327px, 224px, 'icons.png', 'arrow-left-instagram-mobile', );
+$arrow-left-pink-name: 'arrow-left-pink';
+$arrow-left-pink-x: 159px;
+$arrow-left-pink-y: 0px;
+$arrow-left-pink-offset-x: -159px;
+$arrow-left-pink-offset-y: 0px;
+$arrow-left-pink-width: 53px;
+$arrow-left-pink-height: 102px;
+$arrow-left-pink-total-width: 327px;
+$arrow-left-pink-total-height: 224px;
+$arrow-left-pink-image: 'icons.png';
+$arrow-left-pink: (159px, 0px, -159px, 0px, 53px, 102px, 327px, 224px, 'icons.png', 'arrow-left-pink', );
+$arrow-left-violet-name: 'arrow-left-violet';
+$arrow-left-violet-x: 106px;
+$arrow-left-violet-y: 0px;
+$arrow-left-violet-offset-x: -106px;
+$arrow-left-violet-offset-y: 0px;
+$arrow-left-violet-width: 53px;
+$arrow-left-violet-height: 102px;
+$arrow-left-violet-total-width: 327px;
+$arrow-left-violet-total-height: 224px;
+$arrow-left-violet-image: 'icons.png';
+$arrow-left-violet: (106px, 0px, -106px, 0px, 53px, 102px, 327px, 224px, 'icons.png', 'arrow-left-violet', );
+$arrow-left-white-name: 'arrow-left-white';
+$arrow-left-white-x: 212px;
+$arrow-left-white-y: 65px;
+$arrow-left-white-offset-x: -212px;
+$arrow-left-white-offset-y: -65px;
+$arrow-left-white-width: 50px;
+$arrow-left-white-height: 78px;
+$arrow-left-white-total-width: 327px;
+$arrow-left-white-total-height: 224px;
+$arrow-left-white-image: 'icons.png';
+$arrow-left-white: (212px, 65px, -212px, -65px, 50px, 78px, 327px, 224px, 'icons.png', 'arrow-left-white', );
+$arrow-right-biege-name: 'arrow-right-biege';
+$arrow-right-biege-x: 0px;
+$arrow-right-biege-y: 102px;
+$arrow-right-biege-offset-x: 0px;
+$arrow-right-biege-offset-y: -102px;
+$arrow-right-biege-width: 53px;
+$arrow-right-biege-height: 102px;
+$arrow-right-biege-total-width: 327px;
+$arrow-right-biege-total-height: 224px;
+$arrow-right-biege-image: 'icons.png';
+$arrow-right-biege: (0px, 102px, 0px, -102px, 53px, 102px, 327px, 224px, 'icons.png', 'arrow-right-biege', );
+$arrow-right-instagram-mobile-name: 'arrow-right-instagram-mobile';
+$arrow-right-instagram-mobile-x: 106px;
+$arrow-right-instagram-mobile-y: 102px;
+$arrow-right-instagram-mobile-offset-x: -106px;
+$arrow-right-instagram-mobile-offset-y: -102px;
+$arrow-right-instagram-mobile-width: 65px;
+$arrow-right-instagram-mobile-height: 65px;
+$arrow-right-instagram-mobile-total-width: 327px;
+$arrow-right-instagram-mobile-total-height: 224px;
+$arrow-right-instagram-mobile-image: 'icons.png';
+$arrow-right-instagram-mobile: (106px, 102px, -106px, -102px, 65px, 65px, 327px, 224px, 'icons.png', 'arrow-right-instagram-mobile', );
+$arrow-right-pink-name: 'arrow-right-pink';
+$arrow-right-pink-x: 53px;
+$arrow-right-pink-y: 102px;
+$arrow-right-pink-offset-x: -53px;
+$arrow-right-pink-offset-y: -102px;
+$arrow-right-pink-width: 53px;
+$arrow-right-pink-height: 102px;
+$arrow-right-pink-total-width: 327px;
+$arrow-right-pink-total-height: 224px;
+$arrow-right-pink-image: 'icons.png';
+$arrow-right-pink: (53px, 102px, -53px, -102px, 53px, 102px, 327px, 224px, 'icons.png', 'arrow-right-pink', );
+$arrow-right-violet-name: 'arrow-right-violet';
+$arrow-right-violet-x: 0px;
+$arrow-right-violet-y: 0px;
+$arrow-right-violet-offset-x: 0px;
+$arrow-right-violet-offset-y: 0px;
+$arrow-right-violet-width: 53px;
+$arrow-right-violet-height: 102px;
+$arrow-right-violet-total-width: 327px;
+$arrow-right-violet-total-height: 224px;
+$arrow-right-violet-image: 'icons.png';
+$arrow-right-violet: (0px, 0px, 0px, 0px, 53px, 102px, 327px, 224px, 'icons.png', 'arrow-right-violet', );
+$arrow-right-white-name: 'arrow-right-white';
+$arrow-right-white-x: 277px;
+$arrow-right-white-y: 0px;
+$arrow-right-white-offset-x: -277px;
+$arrow-right-white-offset-y: 0px;
+$arrow-right-white-width: 50px;
+$arrow-right-white-height: 78px;
+$arrow-right-white-total-width: 327px;
+$arrow-right-white-total-height: 224px;
+$arrow-right-white-image: 'icons.png';
+$arrow-right-white: (277px, 0px, -277px, 0px, 50px, 78px, 327px, 224px, 'icons.png', 'arrow-right-white', );
+$close-gallery-name: 'close-gallery';
+$close-gallery-x: 187px;
+$close-gallery-y: 167px;
+$close-gallery-offset-x: -187px;
+$close-gallery-offset-y: -167px;
+$close-gallery-width: 24px;
+$close-gallery-height: 24px;
+$close-gallery-total-width: 327px;
+$close-gallery-total-height: 224px;
+$close-gallery-image: 'icons.png';
+$close-gallery: (187px, 167px, -187px, -167px, 24px, 24px, 327px, 224px, 'icons.png', 'close-gallery', );
+$facebook-footer-name: 'facebook-footer';
+$facebook-footer-x: 262px;
+$facebook-footer-y: 65px;
+$facebook-footer-offset-x: -262px;
+$facebook-footer-offset-y: -65px;
+$facebook-footer-width: 11px;
+$facebook-footer-height: 21px;
+$facebook-footer-total-width: 327px;
+$facebook-footer-total-height: 224px;
+$facebook-footer-image: 'icons.png';
+$facebook-footer: (262px, 65px, -262px, -65px, 11px, 21px, 327px, 224px, 'icons.png', 'facebook-footer', );
+$facebook-header-name: 'facebook-header';
+$facebook-header-x: 262px;
+$facebook-header-y: 86px;
+$facebook-header-offset-x: -262px;
+$facebook-header-offset-y: -86px;
+$facebook-header-width: 11px;
+$facebook-header-height: 21px;
+$facebook-header-total-width: 327px;
+$facebook-header-total-height: 224px;
+$facebook-header-image: 'icons.png';
+$facebook-header: (262px, 86px, -262px, -86px, 11px, 21px, 327px, 224px, 'icons.png', 'facebook-header', );
+$facebook-share-article-name: 'facebook-share-article';
+$facebook-share-article-x: 277px;
+$facebook-share-article-y: 158px;
+$facebook-share-article-offset-x: -277px;
+$facebook-share-article-offset-y: -158px;
+$facebook-share-article-width: 40px;
+$facebook-share-article-height: 40px;
+$facebook-share-article-total-width: 327px;
+$facebook-share-article-total-height: 224px;
+$facebook-share-article-image: 'icons.png';
+$facebook-share-article: (277px, 158px, -277px, -158px, 40px, 40px, 327px, 224px, 'icons.png', 'facebook-share-article', );
+$facebook-share-gallery-name: 'facebook-share-gallery';
+$facebook-share-gallery-x: 134px;
+$facebook-share-gallery-y: 167px;
+$facebook-share-gallery-offset-x: -134px;
+$facebook-share-gallery-offset-y: -167px;
+$facebook-share-gallery-width: 28px;
+$facebook-share-gallery-height: 28px;
+$facebook-share-gallery-total-width: 327px;
+$facebook-share-gallery-total-height: 224px;
+$facebook-share-gallery-image: 'icons.png';
+$facebook-share-gallery: (134px, 167px, -134px, -167px, 28px, 28px, 327px, 224px, 'icons.png', 'facebook-share-gallery', );
+$g-plus-share-article-name: 'g-plus-share-article';
+$g-plus-share-article-x: 212px;
+$g-plus-share-article-y: 143px;
+$g-plus-share-article-offset-x: -212px;
+$g-plus-share-article-offset-y: -143px;
+$g-plus-share-article-width: 40px;
+$g-plus-share-article-height: 40px;
+$g-plus-share-article-total-width: 327px;
+$g-plus-share-article-total-height: 224px;
+$g-plus-share-article-image: 'icons.png';
+$g-plus-share-article: (212px, 143px, -212px, -143px, 40px, 40px, 327px, 224px, 'icons.png', 'g-plus-share-article', );
+$g-plus-share-gallery-name: 'g-plus-share-gallery';
+$g-plus-share-gallery-x: 106px;
+$g-plus-share-gallery-y: 167px;
+$g-plus-share-gallery-offset-x: -106px;
+$g-plus-share-gallery-offset-y: -167px;
+$g-plus-share-gallery-width: 28px;
+$g-plus-share-gallery-height: 28px;
+$g-plus-share-gallery-total-width: 327px;
+$g-plus-share-gallery-total-height: 224px;
+$g-plus-share-gallery-image: 'icons.png';
+$g-plus-share-gallery: (106px, 167px, -106px, -167px, 28px, 28px, 327px, 224px, 'icons.png', 'g-plus-share-gallery', );
+$gallery-grid-closed-name: 'gallery-grid-closed';
+$gallery-grid-closed-x: 252px;
+$gallery-grid-closed-y: 183px;
+$gallery-grid-closed-offset-x: -252px;
+$gallery-grid-closed-offset-y: -183px;
+$gallery-grid-closed-width: 20px;
+$gallery-grid-closed-height: 20px;
+$gallery-grid-closed-total-width: 327px;
+$gallery-grid-closed-total-height: 224px;
+$gallery-grid-closed-image: 'icons.png';
+$gallery-grid-closed: (252px, 183px, -252px, -183px, 20px, 20px, 327px, 224px, 'icons.png', 'gallery-grid-closed', );
+$gallery-grid-open-name: 'gallery-grid-open';
+$gallery-grid-open-x: 232px;
+$gallery-grid-open-y: 183px;
+$gallery-grid-open-offset-x: -232px;
+$gallery-grid-open-offset-y: -183px;
+$gallery-grid-open-width: 20px;
+$gallery-grid-open-height: 20px;
+$gallery-grid-open-total-width: 327px;
+$gallery-grid-open-total-height: 224px;
+$gallery-grid-open-image: 'icons.png';
+$gallery-grid-open: (232px, 183px, -232px, -183px, 20px, 20px, 327px, 224px, 'icons.png', 'gallery-grid-open', );
+$gallery-zoom-name: 'gallery-zoom';
+$gallery-zoom-x: 171px;
+$gallery-zoom-y: 102px;
+$gallery-zoom-offset-x: -171px;
+$gallery-zoom-offset-y: -102px;
+$gallery-zoom-width: 30px;
+$gallery-zoom-height: 30px;
+$gallery-zoom-total-width: 327px;
+$gallery-zoom-total-height: 224px;
+$gallery-zoom-image: 'icons.png';
+$gallery-zoom: (171px, 102px, -171px, -102px, 30px, 30px, 327px, 224px, 'icons.png', 'gallery-zoom', );
+$instagram-footer-name: 'instagram-footer';
+$instagram-footer-x: 0px;
+$instagram-footer-y: 204px;
+$instagram-footer-offset-x: 0px;
+$instagram-footer-offset-y: -204px;
+$instagram-footer-width: 20px;
+$instagram-footer-height: 20px;
+$instagram-footer-total-width: 327px;
+$instagram-footer-total-height: 224px;
+$instagram-footer-image: 'icons.png';
+$instagram-footer: (0px, 204px, 0px, -204px, 20px, 20px, 327px, 224px, 'icons.png', 'instagram-footer', );
+$instagram-header-name: 'instagram-header';
+$instagram-header-x: 212px;
+$instagram-header-y: 183px;
+$instagram-header-offset-x: -212px;
+$instagram-header-offset-y: -183px;
+$instagram-header-width: 20px;
+$instagram-header-height: 20px;
+$instagram-header-total-width: 327px;
+$instagram-header-total-height: 224px;
+$instagram-header-image: 'icons.png';
+$instagram-header: (212px, 183px, -212px, -183px, 20px, 20px, 327px, 224px, 'icons.png', 'instagram-header', );
+$search-header-name: 'search-header';
+$search-header-x: 20px;
+$search-header-y: 204px;
+$search-header-offset-x: -20px;
+$search-header-offset-y: -204px;
+$search-header-width: 19px;
+$search-header-height: 19px;
+$search-header-total-width: 327px;
+$search-header-total-height: 224px;
+$search-header-image: 'icons.png';
+$search-header: (20px, 204px, -20px, -204px, 19px, 19px, 327px, 224px, 'icons.png', 'search-header', );
+$send-footer-name: 'send-footer';
+$send-footer-x: 252px;
+$send-footer-y: 143px;
+$send-footer-offset-x: -252px;
+$send-footer-offset-y: -143px;
+$send-footer-width: 25px;
+$send-footer-height: 25px;
+$send-footer-total-width: 327px;
+$send-footer-total-height: 224px;
+$send-footer-image: 'icons.png';
+$send-footer: (252px, 143px, -252px, -143px, 25px, 25px, 327px, 224px, 'icons.png', 'send-footer', );
+$send-header-name: 'send-header';
+$send-header-x: 162px;
+$send-header-y: 167px;
+$send-header-offset-x: -162px;
+$send-header-offset-y: -167px;
+$send-header-width: 25px;
+$send-header-height: 25px;
+$send-header-total-width: 327px;
+$send-header-total-height: 224px;
+$send-header-image: 'icons.png';
+$send-header: (162px, 167px, -162px, -167px, 25px, 25px, 327px, 224px, 'icons.png', 'send-header', );
+$send-share-ico-name: 'send-share-ico';
+$send-share-ico-x: 277px;
+$send-share-ico-y: 118px;
+$send-share-ico-offset-x: -277px;
+$send-share-ico-offset-y: -118px;
+$send-share-ico-width: 40px;
+$send-share-ico-height: 40px;
+$send-share-ico-total-width: 327px;
+$send-share-ico-total-height: 224px;
+$send-share-ico-image: 'icons.png';
+$send-share-ico: (277px, 118px, -277px, -118px, 40px, 40px, 327px, 224px, 'icons.png', 'send-share-ico', );
+$twitt-share-ico-name: 'twitt-share-ico';
+$twitt-share-ico-x: 277px;
+$twitt-share-ico-y: 78px;
+$twitt-share-ico-offset-x: -277px;
+$twitt-share-ico-offset-y: -78px;
+$twitt-share-ico-width: 40px;
+$twitt-share-ico-height: 40px;
+$twitt-share-ico-total-width: 327px;
+$twitt-share-ico-total-height: 224px;
+$twitt-share-ico-image: 'icons.png';
+$twitt-share-ico: (277px, 78px, -277px, -78px, 40px, 40px, 327px, 224px, 'icons.png', 'twitt-share-ico', );
+$twitter-share-gallery-name: 'twitter-share-gallery';
+$twitter-share-gallery-x: 171px;
+$twitter-share-gallery-y: 132px;
+$twitter-share-gallery-offset-x: -171px;
+$twitter-share-gallery-offset-y: -132px;
+$twitter-share-gallery-width: 28px;
+$twitter-share-gallery-height: 28px;
+$twitter-share-gallery-total-width: 327px;
+$twitter-share-gallery-total-height: 224px;
+$twitter-share-gallery-image: 'icons.png';
+$twitter-share-gallery: (171px, 132px, -171px, -132px, 28px, 28px, 327px, 224px, 'icons.png', 'twitter-share-gallery', );
+$arrow-left-biege-2x-name: 'arrow-left-biege-2x';
+$arrow-left-biege-2x-x: 106px;
+$arrow-left-biege-2x-y: 0px;
+$arrow-left-biege-2x-offset-x: -106px;
+$arrow-left-biege-2x-offset-y: 0px;
+$arrow-left-biege-2x-width: 106px;
+$arrow-left-biege-2x-height: 204px;
+$arrow-left-biege-2x-total-width: 654px;
+$arrow-left-biege-2x-total-height: 448px;
+$arrow-left-biege-2x-image: 'icons-2x.png';
+$arrow-left-biege-2x: (106px, 0px, -106px, 0px, 106px, 204px, 654px, 448px, 'icons-2x.png', 'arrow-left-biege-2x', );
+$arrow-left-instagram-mobile-2x-name: 'arrow-left-instagram-mobile-2x';
+$arrow-left-instagram-mobile-2x-x: 424px;
+$arrow-left-instagram-mobile-2x-y: 0px;
+$arrow-left-instagram-mobile-2x-offset-x: -424px;
+$arrow-left-instagram-mobile-2x-offset-y: 0px;
+$arrow-left-instagram-mobile-2x-width: 130px;
+$arrow-left-instagram-mobile-2x-height: 130px;
+$arrow-left-instagram-mobile-2x-total-width: 654px;
+$arrow-left-instagram-mobile-2x-total-height: 448px;
+$arrow-left-instagram-mobile-2x-image: 'icons-2x.png';
+$arrow-left-instagram-mobile-2x: (424px, 0px, -424px, 0px, 130px, 130px, 654px, 448px, 'icons-2x.png', 'arrow-left-instagram-mobile-2x', );
+$arrow-left-pink-2x-name: 'arrow-left-pink-2x';
+$arrow-left-pink-2x-x: 318px;
+$arrow-left-pink-2x-y: 0px;
+$arrow-left-pink-2x-offset-x: -318px;
+$arrow-left-pink-2x-offset-y: 0px;
+$arrow-left-pink-2x-width: 106px;
+$arrow-left-pink-2x-height: 204px;
+$arrow-left-pink-2x-total-width: 654px;
+$arrow-left-pink-2x-total-height: 448px;
+$arrow-left-pink-2x-image: 'icons-2x.png';
+$arrow-left-pink-2x: (318px, 0px, -318px, 0px, 106px, 204px, 654px, 448px, 'icons-2x.png', 'arrow-left-pink-2x', );
+$arrow-left-violet-2x-name: 'arrow-left-violet-2x';
+$arrow-left-violet-2x-x: 212px;
+$arrow-left-violet-2x-y: 0px;
+$arrow-left-violet-2x-offset-x: -212px;
+$arrow-left-violet-2x-offset-y: 0px;
+$arrow-left-violet-2x-width: 106px;
+$arrow-left-violet-2x-height: 204px;
+$arrow-left-violet-2x-total-width: 654px;
+$arrow-left-violet-2x-total-height: 448px;
+$arrow-left-violet-2x-image: 'icons-2x.png';
+$arrow-left-violet-2x: (212px, 0px, -212px, 0px, 106px, 204px, 654px, 448px, 'icons-2x.png', 'arrow-left-violet-2x', );
+$arrow-left-white-2x-name: 'arrow-left-white-2x';
+$arrow-left-white-2x-x: 424px;
+$arrow-left-white-2x-y: 130px;
+$arrow-left-white-2x-offset-x: -424px;
+$arrow-left-white-2x-offset-y: -130px;
+$arrow-left-white-2x-width: 100px;
+$arrow-left-white-2x-height: 156px;
+$arrow-left-white-2x-total-width: 654px;
+$arrow-left-white-2x-total-height: 448px;
+$arrow-left-white-2x-image: 'icons-2x.png';
+$arrow-left-white-2x: (424px, 130px, -424px, -130px, 100px, 156px, 654px, 448px, 'icons-2x.png', 'arrow-left-white-2x', );
+$arrow-right-biege-2x-name: 'arrow-right-biege-2x';
+$arrow-right-biege-2x-x: 0px;
+$arrow-right-biege-2x-y: 204px;
+$arrow-right-biege-2x-offset-x: 0px;
+$arrow-right-biege-2x-offset-y: -204px;
+$arrow-right-biege-2x-width: 106px;
+$arrow-right-biege-2x-height: 204px;
+$arrow-right-biege-2x-total-width: 654px;
+$arrow-right-biege-2x-total-height: 448px;
+$arrow-right-biege-2x-image: 'icons-2x.png';
+$arrow-right-biege-2x: (0px, 204px, 0px, -204px, 106px, 204px, 654px, 448px, 'icons-2x.png', 'arrow-right-biege-2x', );
+$arrow-right-instagram-mobile-2x-name: 'arrow-right-instagram-mobile-2x';
+$arrow-right-instagram-mobile-2x-x: 212px;
+$arrow-right-instagram-mobile-2x-y: 204px;
+$arrow-right-instagram-mobile-2x-offset-x: -212px;
+$arrow-right-instagram-mobile-2x-offset-y: -204px;
+$arrow-right-instagram-mobile-2x-width: 130px;
+$arrow-right-instagram-mobile-2x-height: 130px;
+$arrow-right-instagram-mobile-2x-total-width: 654px;
+$arrow-right-instagram-mobile-2x-total-height: 448px;
+$arrow-right-instagram-mobile-2x-image: 'icons-2x.png';
+$arrow-right-instagram-mobile-2x: (212px, 204px, -212px, -204px, 130px, 130px, 654px, 448px, 'icons-2x.png', 'arrow-right-instagram-mobile-2x', );
+$arrow-right-pink-2x-name: 'arrow-right-pink-2x';
+$arrow-right-pink-2x-x: 106px;
+$arrow-right-pink-2x-y: 204px;
+$arrow-right-pink-2x-offset-x: -106px;
+$arrow-right-pink-2x-offset-y: -204px;
+$arrow-right-pink-2x-width: 106px;
+$arrow-right-pink-2x-height: 204px;
+$arrow-right-pink-2x-total-width: 654px;
+$arrow-right-pink-2x-total-height: 448px;
+$arrow-right-pink-2x-image: 'icons-2x.png';
+$arrow-right-pink-2x: (106px, 204px, -106px, -204px, 106px, 204px, 654px, 448px, 'icons-2x.png', 'arrow-right-pink-2x', );
+$arrow-right-violet-2x-name: 'arrow-right-violet-2x';
+$arrow-right-violet-2x-x: 0px;
+$arrow-right-violet-2x-y: 0px;
+$arrow-right-violet-2x-offset-x: 0px;
+$arrow-right-violet-2x-offset-y: 0px;
+$arrow-right-violet-2x-width: 106px;
+$arrow-right-violet-2x-height: 204px;
+$arrow-right-violet-2x-total-width: 654px;
+$arrow-right-violet-2x-total-height: 448px;
+$arrow-right-violet-2x-image: 'icons-2x.png';
+$arrow-right-violet-2x: (0px, 0px, 0px, 0px, 106px, 204px, 654px, 448px, 'icons-2x.png', 'arrow-right-violet-2x', );
+$arrow-right-white-2x-name: 'arrow-right-white-2x';
+$arrow-right-white-2x-x: 554px;
+$arrow-right-white-2x-y: 0px;
+$arrow-right-white-2x-offset-x: -554px;
+$arrow-right-white-2x-offset-y: 0px;
+$arrow-right-white-2x-width: 100px;
+$arrow-right-white-2x-height: 156px;
+$arrow-right-white-2x-total-width: 654px;
+$arrow-right-white-2x-total-height: 448px;
+$arrow-right-white-2x-image: 'icons-2x.png';
+$arrow-right-white-2x: (554px, 0px, -554px, 0px, 100px, 156px, 654px, 448px, 'icons-2x.png', 'arrow-right-white-2x', );
+$close-gallery-2x-name: 'close-gallery-2x';
+$close-gallery-2x-x: 374px;
+$close-gallery-2x-y: 334px;
+$close-gallery-2x-offset-x: -374px;
+$close-gallery-2x-offset-y: -334px;
+$close-gallery-2x-width: 48px;
+$close-gallery-2x-height: 48px;
+$close-gallery-2x-total-width: 654px;
+$close-gallery-2x-total-height: 448px;
+$close-gallery-2x-image: 'icons-2x.png';
+$close-gallery-2x: (374px, 334px, -374px, -334px, 48px, 48px, 654px, 448px, 'icons-2x.png', 'close-gallery-2x', );
+$facebook-footer-2x-name: 'facebook-footer-2x';
+$facebook-footer-2x-x: 524px;
+$facebook-footer-2x-y: 130px;
+$facebook-footer-2x-offset-x: -524px;
+$facebook-footer-2x-offset-y: -130px;
+$facebook-footer-2x-width: 22px;
+$facebook-footer-2x-height: 42px;
+$facebook-footer-2x-total-width: 654px;
+$facebook-footer-2x-total-height: 448px;
+$facebook-footer-2x-image: 'icons-2x.png';
+$facebook-footer-2x: (524px, 130px, -524px, -130px, 22px, 42px, 654px, 448px, 'icons-2x.png', 'facebook-footer-2x', );
+$facebook-header-2x-name: 'facebook-header-2x';
+$facebook-header-2x-x: 524px;
+$facebook-header-2x-y: 172px;
+$facebook-header-2x-offset-x: -524px;
+$facebook-header-2x-offset-y: -172px;
+$facebook-header-2x-width: 22px;
+$facebook-header-2x-height: 42px;
+$facebook-header-2x-total-width: 654px;
+$facebook-header-2x-total-height: 448px;
+$facebook-header-2x-image: 'icons-2x.png';
+$facebook-header-2x: (524px, 172px, -524px, -172px, 22px, 42px, 654px, 448px, 'icons-2x.png', 'facebook-header-2x', );
+$facebook-share-article-2x-name: 'facebook-share-article-2x';
+$facebook-share-article-2x-x: 554px;
+$facebook-share-article-2x-y: 316px;
+$facebook-share-article-2x-offset-x: -554px;
+$facebook-share-article-2x-offset-y: -316px;
+$facebook-share-article-2x-width: 80px;
+$facebook-share-article-2x-height: 80px;
+$facebook-share-article-2x-total-width: 654px;
+$facebook-share-article-2x-total-height: 448px;
+$facebook-share-article-2x-image: 'icons-2x.png';
+$facebook-share-article-2x: (554px, 316px, -554px, -316px, 80px, 80px, 654px, 448px, 'icons-2x.png', 'facebook-share-article-2x', );
+$facebook-share-gallery-2x-name: 'facebook-share-gallery-2x';
+$facebook-share-gallery-2x-x: 268px;
+$facebook-share-gallery-2x-y: 334px;
+$facebook-share-gallery-2x-offset-x: -268px;
+$facebook-share-gallery-2x-offset-y: -334px;
+$facebook-share-gallery-2x-width: 56px;
+$facebook-share-gallery-2x-height: 56px;
+$facebook-share-gallery-2x-total-width: 654px;
+$facebook-share-gallery-2x-total-height: 448px;
+$facebook-share-gallery-2x-image: 'icons-2x.png';
+$facebook-share-gallery-2x: (268px, 334px, -268px, -334px, 56px, 56px, 654px, 448px, 'icons-2x.png', 'facebook-share-gallery-2x', );
+$g-plus-share-article-2x-name: 'g-plus-share-article-2x';
+$g-plus-share-article-2x-x: 424px;
+$g-plus-share-article-2x-y: 286px;
+$g-plus-share-article-2x-offset-x: -424px;
+$g-plus-share-article-2x-offset-y: -286px;
+$g-plus-share-article-2x-width: 80px;
+$g-plus-share-article-2x-height: 80px;
+$g-plus-share-article-2x-total-width: 654px;
+$g-plus-share-article-2x-total-height: 448px;
+$g-plus-share-article-2x-image: 'icons-2x.png';
+$g-plus-share-article-2x: (424px, 286px, -424px, -286px, 80px, 80px, 654px, 448px, 'icons-2x.png', 'g-plus-share-article-2x', );
+$g-plus-share-gallery-2x-name: 'g-plus-share-gallery-2x';
+$g-plus-share-gallery-2x-x: 212px;
+$g-plus-share-gallery-2x-y: 334px;
+$g-plus-share-gallery-2x-offset-x: -212px;
+$g-plus-share-gallery-2x-offset-y: -334px;
+$g-plus-share-gallery-2x-width: 56px;
+$g-plus-share-gallery-2x-height: 56px;
+$g-plus-share-gallery-2x-total-width: 654px;
+$g-plus-share-gallery-2x-total-height: 448px;
+$g-plus-share-gallery-2x-image: 'icons-2x.png';
+$g-plus-share-gallery-2x: (212px, 334px, -212px, -334px, 56px, 56px, 654px, 448px, 'icons-2x.png', 'g-plus-share-gallery-2x', );
+$gallery-grid-closed-2x-name: 'gallery-grid-closed-2x';
+$gallery-grid-closed-2x-x: 504px;
+$gallery-grid-closed-2x-y: 366px;
+$gallery-grid-closed-2x-offset-x: -504px;
+$gallery-grid-closed-2x-offset-y: -366px;
+$gallery-grid-closed-2x-width: 40px;
+$gallery-grid-closed-2x-height: 40px;
+$gallery-grid-closed-2x-total-width: 654px;
+$gallery-grid-closed-2x-total-height: 448px;
+$gallery-grid-closed-2x-image: 'icons-2x.png';
+$gallery-grid-closed-2x: (504px, 366px, -504px, -366px, 40px, 40px, 654px, 448px, 'icons-2x.png', 'gallery-grid-closed-2x', );
+$gallery-grid-open-2x-name: 'gallery-grid-open-2x';
+$gallery-grid-open-2x-x: 464px;
+$gallery-grid-open-2x-y: 366px;
+$gallery-grid-open-2x-offset-x: -464px;
+$gallery-grid-open-2x-offset-y: -366px;
+$gallery-grid-open-2x-width: 40px;
+$gallery-grid-open-2x-height: 40px;
+$gallery-grid-open-2x-total-width: 654px;
+$gallery-grid-open-2x-total-height: 448px;
+$gallery-grid-open-2x-image: 'icons-2x.png';
+$gallery-grid-open-2x: (464px, 366px, -464px, -366px, 40px, 40px, 654px, 448px, 'icons-2x.png', 'gallery-grid-open-2x', );
+$gallery-zoom-2x-name: 'gallery-zoom-2x';
+$gallery-zoom-2x-x: 342px;
+$gallery-zoom-2x-y: 204px;
+$gallery-zoom-2x-offset-x: -342px;
+$gallery-zoom-2x-offset-y: -204px;
+$gallery-zoom-2x-width: 60px;
+$gallery-zoom-2x-height: 60px;
+$gallery-zoom-2x-total-width: 654px;
+$gallery-zoom-2x-total-height: 448px;
+$gallery-zoom-2x-image: 'icons-2x.png';
+$gallery-zoom-2x: (342px, 204px, -342px, -204px, 60px, 60px, 654px, 448px, 'icons-2x.png', 'gallery-zoom-2x', );
+$instagram-footer-2x-name: 'instagram-footer-2x';
+$instagram-footer-2x-x: 0px;
+$instagram-footer-2x-y: 408px;
+$instagram-footer-2x-offset-x: 0px;
+$instagram-footer-2x-offset-y: -408px;
+$instagram-footer-2x-width: 40px;
+$instagram-footer-2x-height: 40px;
+$instagram-footer-2x-total-width: 654px;
+$instagram-footer-2x-total-height: 448px;
+$instagram-footer-2x-image: 'icons-2x.png';
+$instagram-footer-2x: (0px, 408px, 0px, -408px, 40px, 40px, 654px, 448px, 'icons-2x.png', 'instagram-footer-2x', );
+$instagram-header-2x-name: 'instagram-header-2x';
+$instagram-header-2x-x: 424px;
+$instagram-header-2x-y: 366px;
+$instagram-header-2x-offset-x: -424px;
+$instagram-header-2x-offset-y: -366px;
+$instagram-header-2x-width: 40px;
+$instagram-header-2x-height: 40px;
+$instagram-header-2x-total-width: 654px;
+$instagram-header-2x-total-height: 448px;
+$instagram-header-2x-image: 'icons-2x.png';
+$instagram-header-2x: (424px, 366px, -424px, -366px, 40px, 40px, 654px, 448px, 'icons-2x.png', 'instagram-header-2x', );
+$search-header-2x-name: 'search-header-2x';
+$search-header-2x-x: 40px;
+$search-header-2x-y: 408px;
+$search-header-2x-offset-x: -40px;
+$search-header-2x-offset-y: -408px;
+$search-header-2x-width: 38px;
+$search-header-2x-height: 38px;
+$search-header-2x-total-width: 654px;
+$search-header-2x-total-height: 448px;
+$search-header-2x-image: 'icons-2x.png';
+$search-header-2x: (40px, 408px, -40px, -408px, 38px, 38px, 654px, 448px, 'icons-2x.png', 'search-header-2x', );
+$send-footer-2x-name: 'send-footer-2x';
+$send-footer-2x-x: 504px;
+$send-footer-2x-y: 286px;
+$send-footer-2x-offset-x: -504px;
+$send-footer-2x-offset-y: -286px;
+$send-footer-2x-width: 50px;
+$send-footer-2x-height: 50px;
+$send-footer-2x-total-width: 654px;
+$send-footer-2x-total-height: 448px;
+$send-footer-2x-image: 'icons-2x.png';
+$send-footer-2x: (504px, 286px, -504px, -286px, 50px, 50px, 654px, 448px, 'icons-2x.png', 'send-footer-2x', );
+$send-header-2x-name: 'send-header-2x';
+$send-header-2x-x: 324px;
+$send-header-2x-y: 334px;
+$send-header-2x-offset-x: -324px;
+$send-header-2x-offset-y: -334px;
+$send-header-2x-width: 50px;
+$send-header-2x-height: 50px;
+$send-header-2x-total-width: 654px;
+$send-header-2x-total-height: 448px;
+$send-header-2x-image: 'icons-2x.png';
+$send-header-2x: (324px, 334px, -324px, -334px, 50px, 50px, 654px, 448px, 'icons-2x.png', 'send-header-2x', );
+$send-share-ico-2x-name: 'send-share-ico-2x';
+$send-share-ico-2x-x: 554px;
+$send-share-ico-2x-y: 236px;
+$send-share-ico-2x-offset-x: -554px;
+$send-share-ico-2x-offset-y: -236px;
+$send-share-ico-2x-width: 80px;
+$send-share-ico-2x-height: 80px;
+$send-share-ico-2x-total-width: 654px;
+$send-share-ico-2x-total-height: 448px;
+$send-share-ico-2x-image: 'icons-2x.png';
+$send-share-ico-2x: (554px, 236px, -554px, -236px, 80px, 80px, 654px, 448px, 'icons-2x.png', 'send-share-ico-2x', );
+$twitt-share-ico-2x-name: 'twitt-share-ico-2x';
+$twitt-share-ico-2x-x: 554px;
+$twitt-share-ico-2x-y: 156px;
+$twitt-share-ico-2x-offset-x: -554px;
+$twitt-share-ico-2x-offset-y: -156px;
+$twitt-share-ico-2x-width: 80px;
+$twitt-share-ico-2x-height: 80px;
+$twitt-share-ico-2x-total-width: 654px;
+$twitt-share-ico-2x-total-height: 448px;
+$twitt-share-ico-2x-image: 'icons-2x.png';
+$twitt-share-ico-2x: (554px, 156px, -554px, -156px, 80px, 80px, 654px, 448px, 'icons-2x.png', 'twitt-share-ico-2x', );
+$twitter-share-gallery-2x-name: 'twitter-share-gallery-2x';
+$twitter-share-gallery-2x-x: 342px;
+$twitter-share-gallery-2x-y: 264px;
+$twitter-share-gallery-2x-offset-x: -342px;
+$twitter-share-gallery-2x-offset-y: -264px;
+$twitter-share-gallery-2x-width: 56px;
+$twitter-share-gallery-2x-height: 56px;
+$twitter-share-gallery-2x-total-width: 654px;
+$twitter-share-gallery-2x-total-height: 448px;
+$twitter-share-gallery-2x-image: 'icons-2x.png';
+$twitter-share-gallery-2x: (342px, 264px, -342px, -264px, 56px, 56px, 654px, 448px, 'icons-2x.png', 'twitter-share-gallery-2x', );
+$spritesheet-width: 327px;
+$spritesheet-height: 224px;
+$spritesheet-image: 'icons.png';
+$spritesheet-sprites: ($arrow-left-biege, $arrow-left-instagram-mobile, $arrow-left-pink, $arrow-left-violet, $arrow-left-white, $arrow-right-biege, $arrow-right-instagram-mobile, $arrow-right-pink, $arrow-right-violet, $arrow-right-white, $close-gallery, $facebook-footer, $facebook-header, $facebook-share-article, $facebook-share-gallery, $g-plus-share-article, $g-plus-share-gallery, $gallery-grid-closed, $gallery-grid-open, $gallery-zoom, $instagram-footer, $instagram-header, $search-header, $send-footer, $send-header, $send-share-ico, $twitt-share-ico, $twitter-share-gallery, );
+$spritesheet: (327px, 224px, 'icons.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 654px;
+$retina-spritesheet-height: 448px;
+$retina-spritesheet-image: 'icons-2x.png';
+$retina-spritesheet-sprites: ($arrow-left-biege-2x, $arrow-left-instagram-mobile-2x, $arrow-left-pink-2x, $arrow-left-violet-2x, $arrow-left-white-2x, $arrow-right-biege-2x, $arrow-right-instagram-mobile-2x, $arrow-right-pink-2x, $arrow-right-violet-2x, $arrow-right-white-2x, $close-gallery-2x, $facebook-footer-2x, $facebook-header-2x, $facebook-share-article-2x, $facebook-share-gallery-2x, $g-plus-share-article-2x, $g-plus-share-gallery-2x, $gallery-grid-closed-2x, $gallery-grid-open-2x, $gallery-zoom-2x, $instagram-footer-2x, $instagram-header-2x, $search-header-2x, $send-footer-2x, $send-header-2x, $send-share-ico-2x, $twitt-share-ico-2x, $twitter-share-gallery-2x, );
+$retina-spritesheet: (654px, 448px, 'icons-2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$arrow-left-biege-group-name: 'arrow-left-biege';
+$arrow-left-biege-group: ('arrow-left-biege', $arrow-left-biege, $arrow-left-biege-2x, );
+$arrow-left-instagram-mobile-group-name: 'arrow-left-instagram-mobile';
+$arrow-left-instagram-mobile-group: ('arrow-left-instagram-mobile', $arrow-left-instagram-mobile, $arrow-left-instagram-mobile-2x, );
+$arrow-left-pink-group-name: 'arrow-left-pink';
+$arrow-left-pink-group: ('arrow-left-pink', $arrow-left-pink, $arrow-left-pink-2x, );
+$arrow-left-violet-group-name: 'arrow-left-violet';
+$arrow-left-violet-group: ('arrow-left-violet', $arrow-left-violet, $arrow-left-violet-2x, );
+$arrow-left-white-group-name: 'arrow-left-white';
+$arrow-left-white-group: ('arrow-left-white', $arrow-left-white, $arrow-left-white-2x, );
+$arrow-right-biege-group-name: 'arrow-right-biege';
+$arrow-right-biege-group: ('arrow-right-biege', $arrow-right-biege, $arrow-right-biege-2x, );
+$arrow-right-instagram-mobile-group-name: 'arrow-right-instagram-mobile';
+$arrow-right-instagram-mobile-group: ('arrow-right-instagram-mobile', $arrow-right-instagram-mobile, $arrow-right-instagram-mobile-2x, );
+$arrow-right-pink-group-name: 'arrow-right-pink';
+$arrow-right-pink-group: ('arrow-right-pink', $arrow-right-pink, $arrow-right-pink-2x, );
+$arrow-right-violet-group-name: 'arrow-right-violet';
+$arrow-right-violet-group: ('arrow-right-violet', $arrow-right-violet, $arrow-right-violet-2x, );
+$arrow-right-white-group-name: 'arrow-right-white';
+$arrow-right-white-group: ('arrow-right-white', $arrow-right-white, $arrow-right-white-2x, );
+$close-gallery-group-name: 'close-gallery';
+$close-gallery-group: ('close-gallery', $close-gallery, $close-gallery-2x, );
+$facebook-footer-group-name: 'facebook-footer';
+$facebook-footer-group: ('facebook-footer', $facebook-footer, $facebook-footer-2x, );
+$facebook-header-group-name: 'facebook-header';
+$facebook-header-group: ('facebook-header', $facebook-header, $facebook-header-2x, );
+$facebook-share-article-group-name: 'facebook-share-article';
+$facebook-share-article-group: ('facebook-share-article', $facebook-share-article, $facebook-share-article-2x, );
+$facebook-share-gallery-group-name: 'facebook-share-gallery';
+$facebook-share-gallery-group: ('facebook-share-gallery', $facebook-share-gallery, $facebook-share-gallery-2x, );
+$g-plus-share-article-group-name: 'g-plus-share-article';
+$g-plus-share-article-group: ('g-plus-share-article', $g-plus-share-article, $g-plus-share-article-2x, );
+$g-plus-share-gallery-group-name: 'g-plus-share-gallery';
+$g-plus-share-gallery-group: ('g-plus-share-gallery', $g-plus-share-gallery, $g-plus-share-gallery-2x, );
+$gallery-grid-closed-group-name: 'gallery-grid-closed';
+$gallery-grid-closed-group: ('gallery-grid-closed', $gallery-grid-closed, $gallery-grid-closed-2x, );
+$gallery-grid-open-group-name: 'gallery-grid-open';
+$gallery-grid-open-group: ('gallery-grid-open', $gallery-grid-open, $gallery-grid-open-2x, );
+$gallery-zoom-group-name: 'gallery-zoom';
+$gallery-zoom-group: ('gallery-zoom', $gallery-zoom, $gallery-zoom-2x, );
+$instagram-footer-group-name: 'instagram-footer';
+$instagram-footer-group: ('instagram-footer', $instagram-footer, $instagram-footer-2x, );
+$instagram-header-group-name: 'instagram-header';
+$instagram-header-group: ('instagram-header', $instagram-header, $instagram-header-2x, );
+$search-header-group-name: 'search-header';
+$search-header-group: ('search-header', $search-header, $search-header-2x, );
+$send-footer-group-name: 'send-footer';
+$send-footer-group: ('send-footer', $send-footer, $send-footer-2x, );
+$send-header-group-name: 'send-header';
+$send-header-group: ('send-header', $send-header, $send-header-2x, );
+$send-share-ico-group-name: 'send-share-ico';
+$send-share-ico-group: ('send-share-ico', $send-share-ico, $send-share-ico-2x, );
+$twitt-share-ico-group-name: 'twitt-share-ico';
+$twitt-share-ico-group: ('twitt-share-ico', $twitt-share-ico, $twitt-share-ico-2x, );
+$twitter-share-gallery-group-name: 'twitter-share-gallery';
+$twitter-share-gallery-group: ('twitter-share-gallery', $twitter-share-gallery, $twitter-share-gallery-2x, );
+$retina-groups: ($arrow-left-biege-group, $arrow-left-instagram-mobile-group, $arrow-left-pink-group, $arrow-left-violet-group, $arrow-left-white-group, $arrow-right-biege-group, $arrow-right-instagram-mobile-group, $arrow-right-pink-group, $arrow-right-violet-group, $arrow-right-white-group, $close-gallery-group, $facebook-footer-group, $facebook-header-group, $facebook-share-article-group, $facebook-share-gallery-group, $g-plus-share-article-group, $g-plus-share-gallery-group, $gallery-grid-closed-group, $gallery-grid-open-group, $gallery-zoom-group, $instagram-footer-group, $instagram-header-group, $search-header-group, $send-footer-group, $send-header-group, $send-share-ico-group, $twitt-share-ico-group, $twitter-share-gallery-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../../assets/images/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.b-article-related {
+  overflow: hidden;
+  border-top: 1px solid $color--border-article-related;
+  padding: cr(53px) 0 0;
+  &__item {
+    width: cp(309, 987);
+    margin-right: cp(29, 987);
+    float: left;
+    margin-bottom: 105px;
+    text-align: center;
+    @include bp(overMobile) {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+    @include bp(mobile) {
+      width: cp(270, 565);
+      margin-right: cp(25, 565);
+      margin-bottom: cr(41px);
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__media {}
+  &__heading {
+    font-size: 22px;
+    padding: 20px 0 30px;
+    @include bp(mobile) {
+      font-size: cr(23px);
+      padding: cr(30px) 0 0;
+    }
+  }
+  &__excerpt {
+    font-size: 22px;
+    @extend %hide-on-mobile;
+    color: $color--text;
+  }
+}

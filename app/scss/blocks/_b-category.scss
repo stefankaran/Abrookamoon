@@ -1,0 +1,36 @@
+%b-category {
+  &--article-featured {
+    font-family: $font--NotoNashBold;
+    color: $color--link-brand-primary;
+    &-small {
+      @extend %b-category--article-featured;
+      font-size: 14px;
+    }
+    &-big {
+      @extend %b-category--article-featured;
+      font-size: 16px;
+    }
+    @include bp(mobile) {
+      font-size: cr(20px);
+    }
+  }
+  &--article-listing {
+    @extend %button-style;
+    font-family: $font--NotoNashRegular;
+    font-size: 15px;
+    @include bp(mobile) {
+      font-size: cr(18px);
+    }
+  }
+  &--article-single {
+    font-family: $font--NotoNashBold;
+    display: inline-block;
+    font-size: cr(18px);
+    color: $color--link-brand-primary;
+  }
+  &--article-most-viewed {
+    @extend %button-style;
+    font-family: $font--NotoNashRegular;
+    font-size: cr(23px);
+  }
+}

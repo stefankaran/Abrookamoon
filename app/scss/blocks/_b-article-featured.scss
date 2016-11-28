@@ -1,0 +1,76 @@
+%b-article-featured__row {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.b-article-featured {
+  overflow: hidden;
+  margin-bottom: cr(35px);
+  &__item {
+    overflow: hidden;
+    position: relative;
+    // margin-bottom: cp(6, 1079);
+    margin-bottom: 4px;
+    &:nth-of-type(2) {
+      @include bp(overMobile) {
+        @include b-article-featured--small--right;
+      }
+    }
+    &:nth-of-type(3) {
+      @include bp(overMobile) {
+        @include b-article-featured--small--left;
+      }
+    }
+  }
+}
+.b-article-featured__top { //----- Block Article Top
+  @extend %b-article-featured__row;
+  .b-article-featured__item {
+    @include bp(mobile) { // every item in article-top for mobile
+      @include b-article-featured--big;
+    }
+    @include bp(overMobile) { // every item in article-top for tablet and desktop
+      float: right;
+    }
+    &:nth-of-type(1) { // only first item in article-top
+      @include bp(overMobile) {
+        @include b-article-featured--big;
+        width: cp(533, 1076);
+        margin-left: cp(8, 1076);
+      }
+    }
+    &:not(:first-of-type) { // every item in article-top EXCEPT first
+      @include bp(overMobile) {
+        @include b-article-featured--small;
+        width: cp(533, 1076);
+      }
+    }
+  }
+}
+.b-article-featured__bottom { //----- Block Article bottom
+  @extend %b-article-featured__row;
+  .b-article-featured__item {
+    @include bp(mobile) { // every item in article-bottom for mobile
+      @include b-article-featured--small;
+      &:nth-child(odd) { // every odd item media right, content left
+        @include b-article-featured--small--right;
+      }
+      &:nth-child(even) { // every even item media left, content right
+        @include b-article-featured--small--left;
+      }
+    }
+    &:nth-of-type(1) { // only first item in article-bottom
+      @include bp(overMobile) {
+        @include b-article-featured--big;
+        width: cp(533, 1076);
+        float: left;
+        margin-right: cp(8, 1076);
+      }
+    }
+    &:not(:first-of-type) { // every item in article-bottom EXCEPT first
+      @include bp(overMobile) {
+        @include b-article-featured--small;
+        width: cp(533, 1076);
+      }
+    }
+  }
+}

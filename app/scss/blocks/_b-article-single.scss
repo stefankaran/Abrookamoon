@@ -1,0 +1,115 @@
+.b-article-single {
+  padding-bottom: 53px;
+  @include bp(mobile) {
+    padding-bottom: cr(65px);
+  }
+  &__category {
+    @extend %b-category--article-single;
+    margin-bottom: 19px;
+    @include bp(mobile) {
+      margin-bottom: cr(12px);
+    }
+  }
+  &__head {
+    text-align: center;
+  }
+  &__heading {
+    font-weight: bold;
+    font-size: cr(25px);
+  }
+  &__date {
+    font-family: $font--NotoSerif;
+    font-size: cr(17px) !important;
+    color: $color--date-article-single;
+    margin: cr(33px) 0 48px;
+    @include bp(mobile) {
+      margin-bottom: cr(25px);
+    }
+  }
+  &__custom-text {}
+  &__bottom {
+    overflow: hidden;
+    margin-top: 145px;
+    @include bp(mobile) {
+      margin-top: cr(66px);
+    }
+  }
+  &__tags {
+    margin-top: cr(15px);
+    @include bp(overMobile) {
+      float: right;
+    }
+    @include bp(mobile) {
+      margin-bottom: cr(108px);
+    }
+  }
+  &__tag {
+    // font-family: $font--NotoSans;
+    font-family: $font--NotoNashBold;
+    font-size: 21px;
+    color: $color--brand-primary;
+    margin-left: 5px;
+    @include bp(mobile) {
+      font-size: cr(25px);
+    }
+  }
+  &>p {
+    font-family: $font--NotoNashRegular;
+    color: $color--text;
+    margin-bottom: cr(36px);
+    line-height: cr(27px);
+    font-size: cr(20px);
+  }
+  &>a {
+    margin-bottom: cr(36px);
+  }
+  a {
+    font-family: $font--NotoNashBold;
+    color: $color--brand-primary;
+    font-size: cr(20px);
+    display: inline-block;
+  }
+  blockquote {
+    font-family: $font--NotoNashBold;
+    margin-bottom: cr(36px);
+    line-height: cr(27px);
+    font-size: cr(23px);
+    text-align: center;
+  }
+  ul li {
+    font-size: cr(20px);
+    margin: cr(16px) 0;
+    list-style-type: none;
+    padding-right: 20px;
+    position: relative;
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 4px;
+      content: '';
+      width: 9px;
+      height: 9px;
+      @include vendor-prefixes(border-radius, 50%);
+      background-color: $color--brand-primary;
+    }
+  }
+  strong {
+    font-weight: bold;
+  }
+  figure {
+    margin-bottom: 27px;
+    display: inline-block;
+  }
+  ol li {
+    font-size: 14px;
+    list-style-type: decimal;
+    margin-right: 20px;
+  }
+  @include bp(mobile) {
+    a,
+    p,
+    blockquote {
+      font-size: cr(24px);
+    }
+  }
+}
